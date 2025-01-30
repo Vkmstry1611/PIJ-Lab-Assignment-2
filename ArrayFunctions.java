@@ -5,7 +5,7 @@ class ArrayFunctions{
     // Function to print the array
     public void display(ArrayList<Integer> array){
 
-            System.out.println("Array is : "+array);
+            System.out.println(array);
 
         }
 
@@ -39,7 +39,9 @@ class ArrayFunctions{
 		
 		}
 
+	System.out.println("The Odd array is  :");
 	display(odd);
+	System.out.println("The Even array is  :");
 	display(even);
 	}
 
@@ -63,6 +65,18 @@ class ArrayFunctions{
 	return index;
 
 	}
+
+
+
+	    // Method to convert an array to an ArrayList
+    public ArrayList<Integer> arrayToList(int[] array) {
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int num : array) {
+            list.add(num);
+        }
+        return list;
+    }
+
 
         
 }
