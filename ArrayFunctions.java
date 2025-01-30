@@ -68,7 +68,7 @@ class ArrayFunctions{
 
 
 
-	    // Method to convert an array to an ArrayList
+	// Method to convert an array to an ArrayList
     public ArrayList<Integer> arrayToList(int[] array) {
         ArrayList<Integer> list = new ArrayList<>();
         for (int num : array) {
@@ -77,6 +77,13 @@ class ArrayFunctions{
         return list;
     }
 
-
+	// Method to convert an ArrayList to an array
+    public int[] listToArray(ArrayList<Integer> list) {
+        int[] array = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            array[i] = list.get(i);
+        }
+        return array;
+    }
         
 }
