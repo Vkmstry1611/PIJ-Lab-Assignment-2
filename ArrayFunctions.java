@@ -2,10 +2,17 @@ import java.util.*;
 
 class ArrayFunctions{
 
-    // Function to print the array
+    // Function to print the arraylist
     public void display(ArrayList<Integer> array){
 
             System.out.println(array);
+
+        }
+
+	//function to display array
+	public void display(int[] array){
+
+            System.out.println(Arrays.toString(array));
 
         }
 
